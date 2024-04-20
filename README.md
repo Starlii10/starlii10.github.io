@@ -1,2 +1,3 @@
-# starlii10.github.io
-i love github pages, gives me free web hosting without even trying
+# Starlii's Websites
+
+Home page for my websites.
