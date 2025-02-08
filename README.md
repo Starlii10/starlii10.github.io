@@ -1,6 +1,4 @@
-# BonSite 3.0
-This is a website written by n_bonnie2 and will replace the carrd version of it.
+# Starlii's Website v2
+It's finally happening. I'm doing something about my website.
 
-we now have blogs yay
-
-this requires jekyll (https://jekyllrb.com/docs/) to run locally.
+Based on the very wonderful [BonSite 3.0](https://github.com/underscoreBon/underscorebon.github.io) by underscoreBon.
