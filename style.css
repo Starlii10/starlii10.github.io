@@ -1,12 +1,16 @@
 @font-face {
-    font-family: 'rethink_sans';
-        src: url('fonts/RethinkSans/RethinkSans-Regular.ttf') format('ttf'),
-            url('fonts/RethinkSans/RethinkSans-Regular.ttf') format('ttf');
-            font-weight: normal;
-            font-style: normal;
-            font-display: swap;
-    }
-    /* TODO: all other Rethink Sans font faces */
+    src: url("fonts/RethinkSans/RethinkSans-Regular.ttf");
+    font-family: "Rethink Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    src: url("fonts/RethinkSans/RethinkSans-Italic.ttf");
+    font-family: "Rethink Sans", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+/* TODO: all other Rethink Sans font faces */
 
     body {
         background: conic-gradient(
