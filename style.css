@@ -13,19 +13,19 @@
 /* TODO: all other Rethink Sans font faces */
 
     body {
-        background: conic-gradient(
-            #ffd7fd 90deg,
-            #b800d4 90deg 180deg,
-            #ffd7fd 180deg 270deg,
-            #b800d4 270deg
-        );
-        background-repeat: repeat ;
-        background-size: 60px 60px;
+        height: 100%;
+        background-image: url(images/bg_tile.png), linear-gradient(to bottom right, #DBCE3B, #541779);
+        background-attachment: fixed;
         background-position: top left;
         animation: 3s ease-in 1s infinite reverse both running slidein;
         
         padding-left: 20%;
         padding-right: 20%;
+    }
+
+    body {
+        background-size: 256px 256px, cover;
+        background-repeat: repeat, no-repeat;
     }
 
     .text_shadow{
@@ -39,15 +39,15 @@
     .site_container_top{
         display: inline-flexbox;
         color: rgb(255, 237, 254);
-        border: 10px solid rgb(42, 1, 64);
-        background-color: rgb(71, 3, 98);
+        border: 10px solid #746a00;
+        background-color: #B9B265;
         text-align: center;
         padding: 12px;
       }
       .site_container_links{
         display: inline-block;
-        background-color: rgb(104, 77, 115);
-        border: 10px solid rgb(42, 1, 64);
+        background-color: #332f00;
+        border: 10px solid #746a00;
         color: rgb(4, 4, 4);
         padding: 12px 36px;
         overflow: hidden;
@@ -56,14 +56,14 @@
 
     .site_container    {
         display: inline-flexbox;
-        background-color: rgb(245, 218, 255);
-        border: 10px solid rgb(26, 7, 73);
+        background-color: #5a542f;
+        border: 10px solid #746a00;
         color: rgb(4, 4, 4);
         padding: 12px 36px;
     }
 
     .def_font{
-        font-family: rethink_sans;
+        font-family: "Rethink Sans";
     }
 
 
