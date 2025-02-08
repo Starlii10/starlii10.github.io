@@ -4,7 +4,7 @@ permalink: /blog
 ---
 <main class="site_container">
 <p1 class="def_font">
-  Starlii's Website - Blog Posts
+  Starlii's Website - Blog
 </p1>
 <div class="posts">
     {% for post in site.posts %}
@@ -14,7 +14,7 @@ permalink: /blog
           <ul>
           {% for post in tag[1] %}
             <h2><a href="{{ post.url }}">{{ post.title }}</a></li></h2>
-            📅 posted on: {{ post.date | date: "%B %e, %Y" }}
+            Posted on {{ post.date | date: "%B %e, %Y" }}
             <div class="entry">
               <caption>
                 {{ post.excerpt }}
@@ -24,12 +24,6 @@ permalink: /blog
           </ul>
           {% endfor %}
       </article>
-    {% else %}
-      <p class="def_font">
-          OOPS! There are no posts here... yet, check back later!
-          <br>
-          <img class="keep_aspect" src="/images/no_blog_posts.svg" alt="\"I wonder where the posts are...\"" width="500" height="300"> </img>
-        </p>
     {% endfor %}
 
 
