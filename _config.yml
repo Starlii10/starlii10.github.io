@@ -18,10 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-page.title: BonSite - n_bonnie2’s Website
-title: BonSite
+page.title: Starlii's Website
+title: Starlii
 description: >- # this means to ignore newlines until "baseurl:"
- BonSite - n_bonnie2’s Website - The centerplace of n_bonnie2’s Info, Socials, and Permissions.
+ Starlii's personal website. For keeping up with the starbot's latest adventures.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb

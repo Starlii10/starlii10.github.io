@@ -1,12 +1,12 @@
 @font-face {
-    font-family: 'custom1';
-        src: url('fonts/Grand9KPixelRegular.woff2') format('woff2'),
-            url('fonts/Grand9KPixelRegular.woff') format('woff');
+    font-family: 'rethink_sans';
+        src: url('fonts/RethinkSans/RethinkSans-Regular.ttf') format('ttf'),
+            url('fonts/RethinkSans/RethinkSans-Regular.ttf') format('ttf');
             font-weight: normal;
             font-style: normal;
             font-display: swap;
-            font-family: sans-serif;
     }
+    /* TODO: all other Rethink Sans font faces */
 
     body {
         background: conic-gradient(
@@ -32,7 +32,7 @@
       }
 
     /* Classes */
-    .bon_container_top{
+    .site_container_top{
         display: inline-flexbox;
         color: rgb(255, 237, 254);
         border: 10px solid rgb(42, 1, 64);
@@ -40,7 +40,7 @@
         text-align: center;
         padding: 12px;
       }
-      .bon_container_links{
+      .site_container_links{
         display: inline-block;
         background-color: rgb(104, 77, 115);
         border: 10px solid rgb(42, 1, 64);
@@ -50,7 +50,7 @@
         text-align: center;
       }
 
-    .bon_container    {
+    .site_container    {
         display: inline-flexbox;
         background-color: rgb(245, 218, 255);
         border: 10px solid rgb(26, 7, 73);
@@ -58,8 +58,8 @@
         padding: 12px 36px;
     }
 
-    .pixel_font{
-        font-family: custom1;
+    .def_font{
+        font-family: rethink_sans;
     }
 
 
