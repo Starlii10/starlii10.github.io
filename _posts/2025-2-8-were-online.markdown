@@ -31,4 +31,4 @@ Probably. I might start putting character lore on here. I just have to... y'know
 
 Anyways, that's pretty much it. Here, want a gift? Here's a little Meloetta on a plushie tag, created by my good friend [PixLuma](https://bsky.app/profile/pixluma.bsky.social).
 
-![Cute Meloetta]({{ site.baseurl }}/images/meloatr_2.png)
+![Cute Meloetta]({{ site.baseurl }}/images/not_starliis/meloatr_2_PixLuma.png)
