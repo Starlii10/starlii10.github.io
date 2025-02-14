@@ -57,6 +57,7 @@ GEM
     ffi (1.17.1-x86_64-darwin)
     ffi (1.17.1-x86_64-linux-gnu)
     ffi (1.17.1-x86_64-linux-musl)
+    fiddle (1.1.2)
     forwardable-extended (2.6.0)
     gemoji (4.1.0)
     github-pages (232)
@@ -312,6 +313,7 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
+  fiddle
   github-pages
   http_parser.rb (~> 0.6.0)
   jekyll-feed (~> 0.12)
