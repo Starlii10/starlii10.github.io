@@ -91,6 +91,11 @@
     .embed_padding{
         padding: 16px;
     }
+    
     .half_image{
         max-width: 100%;
+    }
+
+    .center{
+        align-content: center;
     }
