@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-name: Starlii
+name: Starlii's Website
 page.title: Starlii's Website
 site.name: Starlii's Website
 title: Starlii
