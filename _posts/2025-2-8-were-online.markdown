@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "We're Online!"
-categories: "Site"
+categories: site
 author: "Starlii"
 ---
 
