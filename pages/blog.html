@@ -3,50 +3,71 @@ layout: default
 permalink: /blog
 title: Blogs
 ---
+
 <main class="site_container">
     <p1 id="" class="">
     Starlii's Website - Blog
     </p1>
     <div class="posts">
-        <br>
-        Table of Contents:
-        <li><a href="#siteupdates">Site Updates</a></li>
-        <li><a href="#starliisweekly">Starlii's Weekly Check-Ins</a></li>
-        <br>
-        <h3 id="siteupdates">Site Updates</h3>
-      {% for post in site.categories.site %}
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></li></h2>
-      Posted on {{ post.date | date: "%B %e, %Y" }}
-      <div class="entry">
-        <caption>
-          {{ post.excerpt }}
-        </caption>
-      </div>
-      {% else %}
-      <p class="def_font">
-        Nothing here. Check back later!
-        <br>
-        <!-- <img class="keep_aspect half_image" src="/images/no_blog_posts.svg" alt="starstruck wondering where the posts are" width="300"> </img> -->
-      </p>
-      {% endfor %}
+      <br>
+      Table of Contents:
+      <li><a href="#siteupdates">Site Updates</a></li>
+      <li><a href="#starliisweekly">Starlii's Weekly Check-Ins</a></li>
+      <li><a href="#project">Project Updates</a></li>
+      <br>
+      <h3 id="siteupdates">Site Updates</h3>
+        {% for post in site.categories.site %}
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></li></h2>
+        Posted on {{ post.date | date: "%B %e, %Y" }}
+        <div class="entry">
+          <caption>
+            {{ post.excerpt }}
+          </caption>
+        </div>
+        {% else %}
+        <p class="def_font">
+          Nothing here. Check back later!
+          <br>
+          <!-- <img class="keep_aspect half_image" src="/images/no_blog_posts.svg" alt="starstruck wondering where the posts are" width="300"> </img> -->
+        </p>
+        {% endfor %}
       <br>
       <br>
       <h3 id="starliisweekly">Starlii's Weekly Check-Ins</h3>
-      {% for post in site.categories.weekly %}
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></li></h2>
-      Posted on {{ post.date | date: "%B %e, %Y" }}
-      <div class="entry">
-        <caption>
-          {{ post.excerpt }}
-        </caption>
-      </div>
-      {% else %}
-      <p class="def_font">
-        Nothing here. Check back later!
-        <br>
-        <!-- <img class="keep_aspect half_image" src="/images/no_blog_posts.svg" alt="starstruck wondering where the posts are" width="300"> </img> -->
-      </p>
-      {% endfor %}
+        {% for post in site.categories.weekly %}
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></li></h2>
+        Posted on {{ post.date | date: "%B %e, %Y" }}
+        <div class="entry">
+          <caption>
+            {{ post.excerpt }}
+          </caption>
+        </div>
+        {% else %}
+        <p class="def_font">
+          Nothing here. Check back later!
+          <br>
+          <!-- <img class="keep_aspect half_image" src="/images/no_blog_posts.svg" alt="starstruck wondering where the posts are" width="300"> </img> -->
+        </p>
+        {% endfor %}
+      <br>
+      <br>
+      <h3 id="project">Project Updates</h3>
+        {% for post in site.categories.project %}
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></li></h2>
+        Posted on {{ post.date | date: "%B %e, %Y" }}
+        <div class="entry">
+          <caption>
+            {{ post.excerpt }}
+          </caption>
+        </div>
+        {% else %}
+        <p class="def_font">
+          Nothing here. Check back later!
+          <br>
+          <!-- <img class="keep_aspect half_image" src="/images/no_blog_posts.svg" alt="starstruck wondering where the posts are" width="300"> </img> -->
+        </p>
+        {% endfor %}
+        <!-- add new categories below after two <br>s -->
       <a href="#">Back To Top</a>
     </div>
   </div>
