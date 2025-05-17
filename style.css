@@ -162,3 +162,8 @@ body {
 .active:after {
 	content: "▲"; /* Unicode character for "minus" sign (-) */
 }
+
+.notfound_img {
+	float: right;
+	max-width: 100%;
+}
