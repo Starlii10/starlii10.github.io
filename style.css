@@ -1,101 +1,164 @@
 @font-face {
-    src: url("fonts/RethinkSans/RethinkSans-Regular.ttf");
-    font-family: "Rethink Sans", serif;
-    font-weight: 400;
-    font-style: normal;
+	src: url("fonts/RethinkSans/RethinkSans-Regular.ttf");
+	font-family: "Rethink Sans", serif;
+	font-weight: 400;
+	font-style: normal;
 }
 @font-face {
-    src: url("fonts/RethinkSans/RethinkSans-Italic.ttf");
-    font-family: "Rethink Sans", serif;
-    font-weight: 400;
-    font-style: italic;
+	src: url("fonts/RethinkSans/RethinkSans-Italic.ttf");
+	font-family: "Rethink Sans", serif;
+	font-weight: 400;
+	font-style: italic;
 }
 /* TODO: all other Rethink Sans font faces */
 
-    body {
-        height: 100%;
-        background-image: url(images/bg_tile.png), linear-gradient(to bottom right, #DBCE3B, #541779);
-        background-attachment: fixed;
-        background-position: top left;
-        animation: 3s ease-in 1s infinite reverse both running slidein;
-        
-        padding-left: 20%;
-        padding-right: 20%;
-        font-family: "Rethink Sans", serif; /* forcibly apply font because blog page breaks otherwise */
-    }
+body {
+	height: 100%;
+	background-image: url(images/bg_tile.png),
+		linear-gradient(to bottom right, #dbce3b, #541779);
+	background-attachment: fixed;
+	background-position: top left;
+	animation: 3s ease-in 1s infinite reverse both running slidein;
 
-    body {
-        background-size: 256px 256px, cover;
-        background-repeat: repeat, no-repeat;
-    }
+	padding-left: 20%;
+	padding-right: 20%;
+	font-family: "Rethink Sans", serif; /* forcibly apply font because blog page breaks otherwise */
+}
 
-    .text_shadow{
-        background-color: rgba(0, 0, 0, 0.697);
-        color: white;
-        display: inline-block;
-        padding: 0.25%;
-      }
+body {
+	background-size: 256px 256px, cover;
+	background-repeat: repeat, no-repeat;
+}
 
-    /* Classes */
-    .site_container_top{
-        display: inline-flexbox;
-        color: rgb(255, 237, 254);
-        border: 10px solid #746a00;
-        background-color: #B9B265;
-        text-align: center;
-        padding: 12px;
-      }
-      .site_container_links{
-        display: inline-block;
-        background-color: #332f00;
-        border: 10px solid #746a00;
-        color: rgb(4, 4, 4);
-        padding: 12px 36px;
-        overflow: hidden;
-        text-align: center;
-      }
+.text_shadow {
+	background-color: rgba(0, 0, 0, 0.697);
+	color: white;
+	display: inline-block;
+	padding: 0.25%;
+}
 
-    .site_container    {
-        display: inline-flexbox;
-        background-color: #cabe72;
-        border: 10px solid #746a00;
-        color: rgb(4, 4, 4);
-        padding: 12px 36px;
-    }
+/* Classes */
+.site_container_top {
+    display: block;
+    /* color: rgb(255, 237, 254); */
+    /* border: 10px solid rgb(42, 1, 64); */
+    /* background-color: rgb(71, 3, 98); */
+}
+.site_container_links {
+	padding-bottom: 1%;
+	ul {
+		list-style-type: none;
+		padding: 0;
+		overflow: hidden;
+		background-color: #332f00;
+		border: 10px solid rgb(116, 106, 0);
+	}
 
-    .def_font{
-        font-family: "Rethink Sans";
-    }
+	li {
+		border-right: 10px solid rgb(116, 106, 0);
+		float: inline-start;
+		margin: auto;
+	}
 
+	li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}
 
-    .white_link:visited, .white_link:active, .white_link:disabled, .white_link:enabled, .white_link{
-        color: white;
-    }
+	/* Change the link color to #111 (black) on hover */
+	li a:hover {
+		background-color: #111;
+	}
+}
 
-    .white_link:hover{
-        color: paleturquoise;
-    }
+.site_container {
+	display: inline-flexbox;
+	background-color: #cabe72;
+	border: 10px solid #746a00;
+	color: rgb(4, 4, 4);
+	padding: 6px 36px;
+}
 
-    .keep_aspect{
-        object-fit: contain;
-    }
+.def_font {
+	font-family: "Rethink Sans";
+}
 
-    .float_left{
-        float: inline-start;
-    }
+.white_link:visited,
+.white_link:active,
+.white_link:disabled,
+.white_link:enabled,
+.white_link {
+	color: white;
+}
 
-    .container{
-        display: inline-flexbox;
-    }
+.white_link:hover {
+	color: paleturquoise;
+}
 
-    .embed_padding{
-        padding: 16px;
-    }
-    
-    .half_image{
-        max-width: 100%;
-    }
+.keep_aspect {
+	object-fit: contain;
+}
 
-    .center{
-        align-content: center;
-    }
+.float_left {
+	float: inline-start;
+}
+
+.container {
+	display: inline-flexbox;
+}
+
+.embed_padding {
+	padding: 16px;
+}
+
+.half_image {
+	max-width: 100%;
+}
+
+.center {
+	align-content: center;
+}
+
+.entry {
+	border-bottom: 4px solid #111;
+	padding: 1%;
+}
+
+.collapsible {
+	font-family: "Rethink Sans", serif;
+	background-color: #4f5154;
+	color: white;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+}
+.collapsible:hover {
+	background-color: #d1e4ff;
+	color: black;
+}
+.content {
+	padding: 12px 18px;
+	display: none;
+	overflow: hidden;
+	background-color: #ffbdf6;
+	transition: max-height 0.2s ease-out;
+}
+
+.collapsible:after {
+	content: "▼"; /* Unicode character for "plus" sign (+) */
+	font-size: 13px;
+	color: white;
+	float: right;
+	margin-left: 5px;
+}
+
+.active:after {
+	content: "▲"; /* Unicode character for "minus" sign (-) */
+}

@@ -22,17 +22,17 @@ permalink: /projects
 
   <div>
     <header class="">
-        <nav class="def_font">
-            <a href="/"><img class="site_container_top"src="/images/starlii_text.svg" alt="starlii" width="200" height="100"> </img>
-                <div class="def_font site_container_links">
-                    <a class="white_link" href="/">Home</a> -
-                    <a class="white_link" href="/blog">Blog</a> -
-                    <a class="white_link" href="/projects">Projects</a> - 
-                    <a class="white_link" href="/more">More</a>
-                </div>
-         </nav>
+      <nav class="def_font site_container_links" align="center">
+        <a href="/"><img class="keep_aspect"src="/images/starlii_text.svg" alt="Starlii10" width="200" align="center"></a>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/projects">Projects</a></li>
+          <li><a href="/more">More</a></li>
+        </ul>
+      </nav>
     </header>
-</div>
+  </div>
 
       {{ content }}
 
@@ -41,4 +41,19 @@ permalink: /projects
         </footer>
 
   </body>
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  </script>
 </html>
